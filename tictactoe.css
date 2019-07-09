@@ -1,0 +1,148 @@
+ @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+*{
+   
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: fredoka one;
+    height: 100%;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#335c7d, #6c5b7b);
+}
+
+.title{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    border: rgba(255, 193, 169, 0.34) 2px solid;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.05);
+    position: relative;
+    color: white;
+    background-color: #ff9971;
+    width: 8em;
+    height: 2em;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 4em
+}
+
+.container{
+    
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+    margin: 1em auto;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.square{
+    flex-shrink: 1;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.05);
+    border: #ff9971 .3em solid;
+    background-color: #f67280;
+    height: 10em;
+    width: 10em;
+
+    margin: .1em;
+}
+
+.square:hover {
+    cursor: pointer;
+    background-color: #c06c84 ;
+    border-color: #f67280 ;
+}
+
+.square h1 {
+    font-size: 9em;
+    color: white;
+    line-height: 1em;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.turn {
+    width: 20em;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.turn h1 {
+    font-size: 1.2em;
+    margin: 1px 1.4em;
+}
+
+#p1{
+    color: gray;
+}
+
+#p2{
+    color: gray;
+}
+
+#gameover{
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    background: #ff9971;
+    border: white 3px solid;
+    width: 23em;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.44);
+}
+
+#gameover button{
+    cursor: pointer;
+    color: white;
+    background-color: #f67280;
+    border: white .25em solid;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: fredoka one;
+    margin: 1em 0px 0px 0px;
+    width: 11em;
+    padding: .3em;
+}
+#gameover button:hover{
+    color: #f67280;
+    background-color: white;
+    border: #f67280 .25em solid;
+}
+
+@media only screen and (max-width: 425px){
+    
+    .title{
+        font-size: 350%;
+        max-width:100%;
+        min-width: 360px;
+    }
+    .container{
+    margin: 10% auto 10% auto;
+    height: 500%;
+    width: 100%;
+    box-shadow: none;
+    }
+    .square{
+        height: 7rem;
+        width: 7rem;
+    }
+    .square{
+        font-size: .7rem
+    }
+    #gameover{
+        width: 90%;
+        top:43%;
+    }
+}
+

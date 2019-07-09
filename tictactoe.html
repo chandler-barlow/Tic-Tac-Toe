@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <head> <link rel = "stylesheet" href = "./tictactoe.css"></head>
+    <title>Tic Tac Toe</title>
+
+<body>
+<div id = "gameover">
+<h1 id = "endtext"></h1>
+<button onclick = "playAgain()">Play again?</button>
+</div>
+<h1 class = "title" id = "id">Tic Tac Toe</h1>
+<div class = "container">
+ <div class = "column">
+  <div class = "square" id = 'tl' onclick = "clicked(0, 0)"><h1 class = "top left" ></h1></div>
+  <div class = "square" id = 'ml' onclick = "clicked(0, 1)"><h1 class = "middle left"></h1></div>
+  <div class = "square" id = 'bl' onclick = "clicked(0, 2)"><h1 class = "bottom left"></h1></div>
+ </div>
+ <div class = "column">
+  <div class = "square" id = 'tc' onclick = "clicked(1, 0)"><h1 class = "top center"></h1></div>
+  <div class = "square " id = 'mc' onclick = "clicked(1, 1)"><h1 class = "middle center"></h1></div>
+  <div class = "square" id = 'bc' onclick = "clicked(1, 2)"><h1 class = "bottom center"></h1></div>
+ </div>
+  <div class = "column">
+  <div class = "square" id ="tr" onclick="clicked(2, 0)"><h1 class = "top right"></h1></div>
+  <div class = "square" id = "mr" onclick= "clicked(2, 1)"><h1></h1></div>
+  <div class = "square" id = "br" onclick= "clicked(2, 2)"><h1></h1></div>
+ </div>
+</div>
+<div class = "turn">
+ <div id = "p1">
+  <h1>Player One</h1>
+ </div>
+ <div id = "p2">
+  <h1>Player Two</h1>
+ </div>
+</div>
+<script src = "./tictactoe.js"></script>
+</body>
+</html>
+
